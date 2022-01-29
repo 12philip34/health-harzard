@@ -1,0 +1,135 @@
+.body{
+    background-color: black;
+    margin: 0;
+
+}
+#container{
+    background-color: black;
+
+}
+.header{
+    background-color: white;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 0;
+}
+#h1{
+    margin: 0;
+}
+
+
+
+.main{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+ height: 100vh;
+}
+#home{
+    border-top: 3px dotted black;
+background-color: white;
+    padding: 5px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#host{
+background-color: black;
+    color: white;
+    padding: 5px;
+    background-image: url("icon.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#health{
+    border-top: 3px groove black;
+   background-color: white;
+    color: black;
+    padding: 5px;
+}
+.footer{
+    background-color: lightpink;
+    font-size: 2em;
+
+}
+/*.imagelink{*/
+/*    text-decoration: none;*/
+/*    background-color: lightgray;*/
+/*    color: white;*/
+/*}*/
+@media screen and (min-width: 320px) and (max-width: 768px) {
+    .main {
+        display: block;
+        width: 100%;
+    }
+    #home{
+        border-top: 3px dotted black;
+        background-color: white;
+        padding: 5px;
+        display: block;
+        width: 100%;
+    }
+    #host{
+        background-color: black;
+        color: white;
+        padding: 5px;
+        display: block;
+        width: 100%;
+    }
+    #health{
+        background-color: white;
+        color: black;
+        padding: 5px;
+        display: block;
+        width: 100%;
+    }
+    .header{
+        background-color: gray;
+    }
+    .footer{
+        display: none;
+    }
+}
+@media screen and (min-width: 769px) and (max-width: 1024px){
+    .footer{
+        display: none;
+    }
+    .main {
+        display: block;
+        width: 100%;
+    }
+    #home{
+        border-top: 3px dotted black;
+        background-color: rgba(56, 150, 56, 0.842);
+        padding: 5px;
+        display: block;
+        width: 100%;
+    }
+    #host{
+        background-color: black;
+        color: white;
+        padding: 5px;
+        display: block;
+        width: 100%;
+    }
+    #health{
+        background-color: lightgray;
+        color: black;
+        padding: 5px;
+        display: block;
+        width: 100%;
+    }
+    .header{
+        background-color: lightgre;
+    }
+
+
+
+} 
+@media screen and (min-width: 1025px) and (max-width: 1440px){
+    #health{
+        overflow: scroll;
+    }
+    .footer{
+        display: none;
+    }
+}
